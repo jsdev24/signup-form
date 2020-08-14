@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.hero_section {
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	background: url(../img/bg-intro-desktop.png), #ff7a7a;
+	background-size: 40%;
+}
+
+.left-col {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.right-col {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.left-content, .right-content {
+	max-width: 370px;
+	margin: auto;
+}
+
+.left-col h1 {
+	font-size: 2.8rem;
+	color: #fff;
+	margin-bottom: 15px;
+}
+
+.left-col p {
+	font-size: 1.1rem;
+	color: #fff;
+}
+
+.right-content .large-btn {
+	width: 100%;
+	background: hsl(248deg, 32%, 49%);
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 5px 0 rgba(96, 85, 165, 0.5);
+	padding: 15px 0;
+	margin-bottom: 15px;
+	outline: none;
+}
+
+.right-content .large-btn span {
+	font-weight: bold;
+}
+
+.right-content form {
+	width: 100%;
+	background: #fff;
+	padding: 35px;
+	border-radius: 15px;
+	box-shadow: 0 0 10px gray;
+}
+
+.right-content form input {
+	width: 100%;
+	border-radius: 5px;
+	margin: 10px 0;
+	border: 1px solid lightgray;
+	padding: 10px 15px;
+	outline: none;
+}
+
+input::placeholder {
+	color: gray;
+}
+
+.right-content .submit {
+	width: 100%;
+	display: block;
+	background: rgb(56, 204, 140);
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	font-weight: bold;
+	padding: 15px 0;
+	margin: 10px 0;
+	text-transform: uppercase;
+	font-size: 18px;
+	outline: none;
+}
+
+.right-content small {
+	font-size: .7rem;
+	color: gray;
+}
+
+
+@media only screen and (max-width: 768px) {
+	.hero_section {
+		flex-direction: column;
+		padding: 50px 0;
+	}
+
+	.left-col, .right-col {
+		padding: 30px;
+	}
+
+	.left-content, .right-content {
+		max-width: 400px;
+		margin: auto;
+	}
+}
